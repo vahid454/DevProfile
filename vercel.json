@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd devprofile-frontend && npm run build",
+  "buildCommand": "cd devprofile-frontend && npm install && npm run build",
   "outputDirectory": "devprofile-frontend/dist/devprofile-frontend",
   "env": {},
   "regions": ["iad1"],
