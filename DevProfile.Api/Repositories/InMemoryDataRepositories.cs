@@ -43,7 +43,7 @@ public class InMemoryExperienceRepository : IExperienceRepository
 
         var exp4 = new Experience(
             Guid.NewGuid(),
-            "Intern - Software Developer",
+            "Intern",
             "Smart Home Automation Project",
             new DateTime(2020, 6, 1),
             new DateTime(2020, 12, 31),
