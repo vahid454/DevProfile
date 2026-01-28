@@ -1,0 +1,145 @@
+{
+  "name": "Vahid Mansuri",
+  "email": "vahidmansuri702@gmail.com",
+  "phone": "+91 8109300454",
+  "location": "Ujjain/Pune, India",
+  "github": "github/vahid454",
+  "linkedin": "linkedin/vahid454",
+  "summary": "Full Stack Developer with 5+ years of experience building scalable applications using .NET Core, Angular, and cloud technologies. Expertise in microservices architecture, AI integration, and DevOps pipelines with proven track record at Hansen Tech, NCS Group, and Capgemini.",
+  "experience": [
+    {
+      "title": "Software Developer",
+      "company": "Hansen Tech, Pune",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "description": "Working as a Full Stack Developer on Catalog Hansen Product, a telco-service provider platform. Utilizing Core Concepts, REST APIs, Open APIs and KAFKA events to enable seamless transmission, proficient in AWS Services, Helm Deployment and Azure pipelines for streamline development. Aligning test framework to use Spec Flow BDD and enhancing the user experience. Managed Kubernetes clusters with Helm and integrated identity management via Okta. Actively developing Grace AI and transforming it into an agentic AI through integration with MCP server."
+    },
+    {
+      "title": "Associate Engineer",
+      "company": "NCS Group, Pune",
+      "startDate": "Jan 2022",
+      "endDate": "Dec 2023",
+      "description": "Worked as a Full Stack Developer on IRIN P3 Tax System of Singapore. Worked on Financial Account Management module, understanding Tax Terms and Financial components. Extensively working with Microservice architecture collaborated with cross platform user interface. Applied .NET Core, Kafka and NgRX to streamline financial workflows, led Azure DevOps based CI/CD pipelines to accelerate deployment cycles."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Capgemini Engineering, Gurgaon",
+      "startDate": "Jan 2021",
+      "endDate": "Jan 2022",
+      "description": "Enhanced 5G-SA-L3 product to implement various features like XNHO Cell to Cell Handover and CAG for improving network. Utilized Google Test and NUnit to ensure robust network performance. Developed a Performance Improver Automation tool for creating various setups and simulators using C Sharp."
+    },
+    {
+      "title": "Internship Trainee",
+      "company": "Thinking Machines, Ujjain",
+      "startDate": "Apr 2019",
+      "endDate": "Jun 2019",
+      "description": "Designed a full duplex Smart Home automation tool to automate home appliances, created a Raspberry Pi based server application which can communicate to IoT devices through an Android APK to control everything remotely over Wi-Fi. Used Web Socket concepts for live sharing among the devices."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.E.",
+      "field": "Computer Science and Engineering",
+      "school": "Government Engineering College",
+      "location": "Ujjain, India",
+      "startYear": "2016",
+      "endYear": "2020",
+      "gpa": "7.1/10",
+      "coursework": "Data Structures, Design and analysis of Algorithms, Database Systems, Operating Systems, Software Engineering and interpersonal skills"
+    },
+    {
+      "degree": "12th State Board",
+      "school": "Shastri Smriti VM HS School",
+      "location": "Sarangpur, MP, India",
+      "startYear": "2013",
+      "endYear": "2016",
+      "percentage": "93.8%"
+    },
+    {
+      "degree": "10th State Board",
+      "school": "Shastri Smriti VM HS School",
+      "location": "Sarangpur, MP, India",
+      "percentage": "89%"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": ["C#", "Angular", "Java", "C", "C++", "Python", "TypeScript", "HTML", "CSS", "JavaScript (Basic)"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MSSQL Server", "MySQL", "NoSQL"]
+    },
+    {
+      "category": "Frameworks",
+      "items": [".NET Core", "JMeter", "Redux", "Microservice", "MVC", "Knockout JS", "NumPy"]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": ["Azure (AZDO, Function, App Insight, Blob Storage)", "AWS (S3, RDS, Bedrock)", "Docker", "Kafka", "Helm", "Kubernetes"]
+    },
+    {
+      "category": "AI & Tools",
+      "items": ["LLaMA", "GenAI", "MCP Server", "LLM Integration"]
+    },
+    {
+      "category": "Tools & Technologies",
+      "items": ["Grafana", "Postman", "SonarQube", "LINQ", "Web APIs", "UT_FRWK", "xUnit", "Spec Flow", "Google Test", "NUnit"]
+    },
+    {
+      "category": "Architecture & Design",
+      "items": ["SOLID", "Design and HLD", "Low-level Design", "Microservices Architecture", "REST APIs"]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Azure Developer Associate",
+      "issuer": "Microsoft",
+      "code": "AZ-204"
+    },
+    {
+      "title": "Azure Fundamentals",
+      "issuer": "Microsoft",
+      "code": "AZ-900"
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Agentic AI Development",
+      "description": "Actively developing Grace AI and transforming it into an agentic AI through integration with MCP server at Hansen Tech"
+    },
+    {
+      "title": "5G Network Optimization",
+      "description": "Enhanced 5G-SA-L3 product with features like XNHO Cell to Cell Handover and CAG for improving network performance at Capgemini"
+    },
+    {
+      "title": "Smart Home Automation",
+      "description": "Designed a full duplex Smart Home automation tool with Raspberry Pi server and Android APK for remote IoT control via WebSocket"
+    },
+    {
+      "title": "Tax System Development",
+      "description": "Developed Financial Account Management module for IRIN P3 Tax System of Singapore using .NET Core and Kafka microservices"
+    },
+    {
+      "title": "Kubernetes & Helm Management",
+      "description": "Managed Kubernetes clusters with Helm and integrated identity management via Okta at Hansen Tech"
+    },
+    {
+      "title": "SQL Data Modeler Tool",
+      "description": "Created a desktop application framework similar to Toad Data Modeler that generates SQL scripts with drag-and-drop interface using AJAX"
+    },
+    {
+      "title": "Azure & AWS Cloud Integration",
+      "description": "Proficient in Azure DevOps pipelines, Azure Functions, App Insights, and AWS services including S3, RDS, and Bedrock for AI integration"
+    },
+    {
+      "title": "Awards & Recognition",
+      "description": "Received Spot Awards at NCS and Salute Success awards at Hansen Tech; District Top Rank in SSC and HSC"
+    },
+    {
+      "title": "Scrum Master",
+      "description": "Served as Scrum Master on a rotating basis and active member of International Lions Club"
+    }
+  ]
+}

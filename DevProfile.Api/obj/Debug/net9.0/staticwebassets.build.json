@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "LmzA58cMjcdYaTY6/IQBLATlT9usB1hq5BWgmzdxAe4=",
+  "Source": "DevProfile.Api",
+  "BasePath": "_content/DevProfile.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

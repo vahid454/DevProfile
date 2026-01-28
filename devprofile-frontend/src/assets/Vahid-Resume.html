@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vahid Kha Mansuri - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+        
+        .container {
+            max-width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+            box-shadow: 0 0 0 1px #ddd;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1e40af;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job-entry, .education-entry, .skill-group {
+            margin-bottom: 12px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #1e40af;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #2563eb;
+            font-size: 12px;
+        }
+        
+        .date {
+            font-size: 11px;
+            color: #888;
+            font-style: italic;
+        }
+        
+        .description {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #555;
+        }
+        
+        .bullet {
+            margin-left: 15px;
+            margin-bottom: 3px;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+        
+        .bullet:before {
+            content: "→ ";
+            color: #2563eb;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .education-entry h3 {
+            font-weight: bold;
+            font-size: 12px;
+            color: #1e40af;
+            margin-bottom: 3px;
+        }
+        
+        .education-entry .school {
+            font-weight: 600;
+            color: #2563eb;
+            font-size: 11px;
+        }
+        
+        .education-entry .details {
+            font-size: 11px;
+            color: #666;
+            margin-top: 3px;
+        }
+        
+        .skill-group h3 {
+            font-weight: bold;
+            font-size: 12px;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+        
+        .skills {
+            font-size: 11px;
+            color: #555;
+            columns: 2;
+            column-gap: 15px;
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-right: 5px;
+            margin-bottom: 4px;
+            font-size: 10px;
+        }
+        
+        .summary {
+            font-size: 11px;
+            line-height: 1.5;
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VAHID KHA MANSURI</h1>
+            <div class="contact-info">
+                📧 <a href="mailto:vahidmansuri702@gmail.com">vahidmansuri702@gmail.com</a> | 
+                📱 <a href="tel:+918109300454">+91 8109300454</a> | 
+                💼 <a href="https://linkedin.com/in/vahid454" target="_blank">LinkedIn</a> | 
+                🐙 <a href="https://github.com/vahid454" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Full Stack Engineer with 5+ years of experience building scalable, enterprise-grade applications. 
+                Specialized in C#/.NET backend development, Angular frontend architecture, and cloud infrastructure (Azure, AWS). 
+                Certified Azure Developer Associate with expertise in microservices, CI/CD pipelines, and AI integration. 
+                Proven track record of leading technical teams, optimizing system performance, and mentoring junior developers.
+            </p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="job-entry">
+                <div class="job-title">Software Developer</div>
+                <div class="company">Hansen Tech <span class="date">Jun 2023 – Present</span></div>
+                <div class="bullet">Full Stack development with C#, Angular, and AWS cloud infrastructure</div>
+                <div class="bullet">Developed scalable REST APIs with .NET Core serving 100K+ daily requests</div>
+                <div class="bullet">Built responsive Angular UIs with Tailwind CSS achieving 95+ Lighthouse score</div>
+                <div class="bullet">Implemented microservices architecture reducing system latency by 40%</div>
+                <div class="bullet">Led code reviews and mentored 3 junior developers on best practices</div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-title">Associate Engineer</div>
+                <div class="company">NCS Group <span class="date">Jan 2022 – May 2023</span></div>
+                <div class="bullet">Enterprise application development and cloud migration to Azure</div>
+                <div class="bullet">Led backend team for microservices development handling critical business operations</div>
+                <div class="bullet">Implemented CI/CD pipelines with GitHub Actions reducing deployment time by 60%</div>
+                <div class="bullet">Optimized database performance improving response times by 50%</div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-title">Software Engineer</div>
+                <div class="company">Capgemini <span class="date">Mar 2021 – Dec 2021</span></div>
+                <div class="bullet">Windows and web application development for enterprise clients</div>
+                <div class="bullet">Developed enterprise WPF applications with C# for internal tools</div>
+                <div class="bullet">Created RESTful APIs and SQL Server databases for data management</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-entry">
+                <h3>B.E. in Computer Science Engineering</h3>
+                <div class="school">Govt. Engineering College Ujjain</div>
+                <div class="details">Graduated: 2020 | CGPA: 7.1/10</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skill-group">
+                <h3>Backend:</h3>
+                <div class="skills">
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">.NET Core</span>
+                    <span class="skill-tag">ASP.NET</span>
+                    <span class="skill-tag">Entity Framework</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>Frontend:</h3>
+                <div class="skills">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">RxJS</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>Cloud & DevOps:</h3>
+                <div class="skills">
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="bullet">Azure Developer Associate (AZ-204)</div>
+            <div class="bullet">Azure Fundamentals (AZ-900)</div>
+        </section>
+    </div>
+</body>
+</html>

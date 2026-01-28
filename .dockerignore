@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+bin
+obj
+.vs
+.vscode
+*.user
+*.suo
+.git
+.gitignore
+README.md
+.DS_Store
+dist
+coverage
+.angular
