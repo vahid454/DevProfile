@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevProfile</title>
+  <script>
+    // GitHub Pages 404 redirect
+    // Redirect to index.html with path preserved for Angular router
+    var pathSegments = window.location.pathname.split('/').filter(Boolean);
+    var repoName = pathSegments[0]; // 'DevProfile'
+    var route = '/' + pathSegments.slice(1).join('/');
+    
+    // Store the redirect path in sessionStorage
+    sessionStorage.redirect = route;
+    
+    // Redirect to index.html
+    window.location.href = '/' + repoName + '/index.html';
+  </script>
+</head>
+<body>
+</body>
+</html>
