@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "1",
+    "Name": "DevProfile - Interactive Portfolio",
+    "Description": "Full-stack portfolio application built with Angular 18, ASP.NET Core 9, and modern UI/UX practices. Features real-time data binding, dark mode, and responsive design.",
+    "Url": "https://github.com/vahid454/DevProfile",
+    "Languages": ["Angular", "TypeScript", "ASP.NET Core", "C#", "Docker"],
+    "CreatedAt": "2025-01-28"
+  },
+  {
+    "Id": "2",
+    "Name": "Grace AI - Agentic AI System",
+    "Description": "AI-powered agent system integrating MCP (Model Context Protocol) server for autonomous task execution. Built with LLaMA and LLM integration at Hansen Tech.",
+    "Url": "https://github.com/vahid454",
+    "Languages": ["Python", "MCP", "LLM", "AI", "GenAI"],
+    "CreatedAt": "2025-01-20"
+  },
+  {
+    "Id": "3",
+    "Name": "Kubernetes Helm Deployment Manager",
+    "Description": "Enterprise-grade Kubernetes cluster management tool with Helm for multi-environment deployments. Integrated Okta for identity management.",
+    "Url": "https://github.com/vahid454",
+    "Languages": ["Kubernetes", "Helm", "Docker", "DevOps", "Azure"],
+    "CreatedAt": "2025-01-15"
+  },
+  {
+    "Id": "4",
+    "Name": "5G Network Optimization Tool",
+    "Description": "Enhanced 5G-SA-L3 product with XNHO Cell to Cell Handover and CAG features. Improved network performance and reliability.",
+    "Url": "https://github.com/vahid454",
+    "Languages": ["C++", "C#", "Network", "5G", "Google Test"],
+    "CreatedAt": "2025-01-10"
+  },
+  {
+    "Id": "5",
+    "Name": "Smart Home Automation Platform",
+    "Description": "Full duplex smart home automation system with Raspberry Pi server and Android APK. Real-time device control via WebSocket communication.",
+    "Url": "https://github.com/vahid454",
+    "Languages": ["Python", "Java", "WebSocket", "IoT", "Raspberry Pi"],
+    "CreatedAt": "2025-01-05"
+  },
+  {
+    "Id": "6",
+    "Name": "IRIN P3 Tax System",
+    "Description": "Financial Account Management module for Singapore tax system. Microservices architecture with Kafka event streaming and NgRX state management.",
+    "Url": "https://github.com/vahid454",
+    "Languages": [".NET Core", "Angular", "Kafka", "Microservices", "Azure"],
+    "CreatedAt": "2024-12-25"
+  },
+  {
+    "Id": "7",
+    "Name": "SQL Data Modeler Tool",
+    "Description": "Desktop application for SQL database modeling with drag-and-drop interface. Generates SQL scripts similar to Toad Data Modeler using AJAX.",
+    "Url": "https://github.com/vahid454",
+    "Languages": ["C#", "AJAX", "SQL", "WinForms", "Database"],
+    "CreatedAt": "2024-12-15"
+  },
+  {
+    "Id": "8",
+    "Name": "Performance Improver Automation",
+    "Description": "Automation tool for creating network setups and simulators. Enhances performance testing and debugging capabilities.",
+    "Url": "https://github.com/vahid454",
+    "Languages": ["C#", ".NET", "Automation", "Performance", "Testing"],
+    "CreatedAt": "2024-12-10"
+  },
+  {
+    "Id": "9",
+    "Name": "Microservices REST API Framework",
+    "Description": "Scalable REST API framework using .NET Core with comprehensive error handling, logging, and monitoring using Grafana.",
+    "Url": "https://github.com/vahid454",
+    "Languages": [".NET Core", "C#", "REST API", "Microservices", "Grafana"],
+    "CreatedAt": "2024-12-05"
+  }
+]

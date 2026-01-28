@@ -3,22 +3,23 @@
 <head>
   <title>DevProfile</title>
   <script>
-    // GitHub Pages 404 redirect for SPA
-    // Capture the requested route and redirect to index.html
-    var path = window.location.pathname;
+    // GitHub Pages SPA redirect
+    // When a 404 is triggered (user visits /contact, /resume, etc)
+    // we capture the path and redirect to index.html
+    var pathSegments = window.location.pathname.split('/').filter(Boolean);
     
-    // Store path for Angular router to use
-    sessionStorage.setItem('redirect', path);
+    // For https://vahid454.github.io/contact -> pathSegments = ['contact']
+    // For https://vahid454.github.io/ -> pathSegments = []
+    var redirectPath = '/' + pathSegments.join('/');
     
-    // Redirect to home page, Angular router will handle the path
+    // Store the requested path
+    sessionStorage.setItem('redirect', redirectPath);
+    
+    // Redirect to index.html - the Angular app will handle the route
     window.location.replace('/index.html');
   </script>
 </head>
 <body>
   Redirecting...
-</body>
-</html>
-</head>
-<body>
 </body>
 </html>
