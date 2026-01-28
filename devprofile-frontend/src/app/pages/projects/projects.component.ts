@@ -88,10 +88,19 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.portfolioService.getProjects().subscribe(data => {
-      // Sort by creation date (newest first)
-      this.projects = data.sort((a: any, b: any) => 
+      console.log('Projects data:', data);
+      // Convert PascalCase to camelCase for binding
+      this.projects = data.map((p: any) => ({
+        id: p.id || p.Id,
+        name: p.name || p.Name,
+        description: p.description || p.Description,
+        url: p.url || p.Url,
+        languages: p.languages || p.Languages || [],
+        createdAt: p.createdAt || p.CreatedAt
+      })).sort((a: any, b: any) => 
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       );
+      console.log('Mapped projects:', this.projects);
     });
   }
 }
