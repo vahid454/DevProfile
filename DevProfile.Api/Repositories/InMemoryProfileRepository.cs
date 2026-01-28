@@ -11,7 +11,7 @@ public class InMemoryProfileRepository : IProfileRepository
     public InMemoryProfileRepository()
     {
         // seed sample
-        var sample = new Profile(Guid.NewGuid(), "Vahid", "Mansuri", "vahid@example.com");
+        var sample = new Profile(Guid.NewGuid(), "Vahid", "Mansuri", "vahidmansuri702@gmail.com");
         _store[sample.Id] = sample;
     }
 
