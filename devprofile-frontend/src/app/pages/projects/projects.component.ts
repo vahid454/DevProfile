@@ -88,14 +88,14 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.portfolioService.getProjects().subscribe((data: any[]) => {
-      // Map PascalCase to camelCase
+      // Handle both PascalCase (from JSON) and camelCase (from API)
       this.projects = data.map(p => ({
-        id: p.Id,
-        name: p.Name,
-        description: p.Description,
-        url: p.Url,
-        languages: p.Languages,
-        createdAt: p.CreatedAt
+        id: p.id || p.Id,
+        name: p.name || p.Name,
+        description: p.description || p.Description,
+        url: p.url || p.Url,
+        languages: p.languages || p.Languages || [],
+        createdAt: p.createdAt || p.CreatedAt
       })).sort((a: any, b: any) => 
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
       );
