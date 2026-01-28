@@ -1,0 +1,124 @@
+VAHID KHA MANSURI
+📧 vahidmansuri702@gmail.com | 📱 +91 8109300454 | 💼 LinkedIn: linkedin.com/in/vahid454 | 🐙 GitHub: github.com/vahid454
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Full Stack Engineer with 5+ years of experience building scalable, enterprise-grade applications.
+Specialized in C#/.NET backend development, Angular frontend architecture, and cloud infrastructure (Azure, AWS).
+Certified Azure Developer Associate with expertise in microservices, CI/CD pipelines, and AI integration.
+Proven track record of leading technical teams, optimizing system performance, and mentoring junior developers.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL EXPERIENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SOFTWARE DEVELOPER
+Hansen Tech | Jun 2023 – Present
+→ Full Stack development with C#, Angular, and AWS cloud infrastructure
+→ Developed scalable REST APIs with .NET Core serving 100K+ daily requests
+→ Built responsive Angular UIs with Tailwind CSS achieving 95+ Lighthouse score
+→ Managed AWS cloud infrastructure and managed deployments with Infrastructure as Code
+→ Implemented microservices architecture reducing system latency by 40%
+→ Led code reviews and mentored 3 junior developers on best practices and design patterns
+
+ASSOCIATE ENGINEER
+NCS Group | Jan 2022 – May 2023
+→ Enterprise application development and cloud migration to Azure
+→ Led backend team for microservices development handling critical business operations
+→ Implemented CI/CD pipelines with GitHub Actions reducing deployment time by 60%
+→ Optimized database performance and query execution improving response times by 50%
+→ Managed Azure cloud resources and deployments ensuring 99.9% uptime
+
+SOFTWARE ENGINEER
+Capgemini | Mar 2021 – Dec 2021
+→ Windows and web application development for enterprise clients
+→ Developed enterprise WPF applications with C# for internal tools
+→ Created RESTful APIs and SQL Server databases for data management
+→ Participated in agile sprints delivering features on schedule
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EDUCATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+B.E. in Computer Science Engineering
+Govt. Engineering College Ujjain | 2020
+CGPA: 7.1/10
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TECHNICAL SKILLS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LANGUAGES
+→ C#, JavaScript, TypeScript, Python, SQL, C++, Java
+
+FRAMEWORKS & PLATFORMS
+→ Angular, .NET Core, ASP.NET, Entity Framework, React, WPF
+
+DATABASES
+→ SQL Server, PostgreSQL, MongoDB, Redis, Firebase
+
+CLOUD & INFRASTRUCTURE
+→ Azure (App Service, Functions, SQL Database, DevOps), AWS (EC2, S3, Lambda), Google Cloud
+→ Docker, Kubernetes, CI/CD (GitHub Actions, Azure DevOps), Infrastructure as Code
+
+ARCHITECTURE & DESIGN
+→ Microservices Architecture, REST APIs, SOLID Principles, Design Patterns
+→ System Design, Performance Optimization, Security Best Practices
+
+AI & EMERGING TECH
+→ LLMs, OpenAI Integration, Prompt Engineering, AI Agents, Agentic Workflows
+
+TOOLS & PLATFORMS
+→ Git, GitHub, Azure DevOps, Jira, VS Code, Visual Studio, Postman, Swagger
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CERTIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏆 Azure Developer Associate (AZ-204)
+🏆 Azure Fundamentals (AZ-900)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY ACHIEVEMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Architected and deployed microservices-based system reducing operational costs by 35%
+✓ Led technical migration of monolithic application to cloud, saving $200K+ annually
+✓ Developed AI agent framework integrating OpenAI, processing 10K+ requests/day
+✓ Optimized critical database queries improving application response time by 50%
+✓ Implemented Kubernetes orchestration managing 20+ containerized services
+✓ Mentored 5+ junior developers, improving team productivity by 25%
+✓ Contributed to open-source projects with 19 public repositories on GitHub
+✓ Achieved Azure Developer Associate certification on first attempt
+✓ Built interview-ready portfolio website with C#, Angular, and Tailwind CSS
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FEATURED PROJECTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 Meeting AI (TypeScript, React, OpenAI)
+AI-powered meeting transcription and summarization platform
+
+💼 Smart Plaza (Dart, Flutter, Firebase)
+Full-featured e-commerce application with real-time inventory management
+
+🌐 Agency Site (TypeScript, React, Tailwind CSS)
+Modern web agency landing page with interactive components
+
+💻 DevProfile (C#, Angular, Tailwind CSS, .NET)
+Interactive resume and portfolio website with REST API backend
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Generated: January 27, 2026
+Portfolio: http://localhost:4200
+GitHub: https://github.com/vahid454
