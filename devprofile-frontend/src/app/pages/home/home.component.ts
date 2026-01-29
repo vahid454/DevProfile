@@ -69,6 +69,22 @@ import { CommonModule } from '@angular/common';
           </a>
         </div>
 
+        <!-- What I Care About -->
+        <div class="max-w-4xl mx-auto mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-900 dark:text-white">What I Care About</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div *ngFor="let c of cards" class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+              <div class="flex items-start gap-4">
+                <div class="text-3xl p-3 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900 dark:to-indigo-900 text-blue-600 dark:text-blue-200">{{ c.icon }}</div>
+                <div>
+                  <h3 class="text-lg font-bold text-gray-900 dark:text-white">{{ c.title }}</h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">{{ c.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Stats Grid -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           <div class="bg-white dark:bg-gray-800 p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-600 dark:border-blue-400">
@@ -157,4 +173,22 @@ import { CommonModule } from '@angular/common';
   `,
   styles: []
 })
-export class HomeComponent {}
+export class HomeComponent {
+  cards = [
+    {
+      icon: '🎯',
+      title: 'Impact-Driven',
+      description: 'Building solutions that solve real problems and create measurable value.'
+    },
+    {
+      icon: '🧑‍🤝‍🧑',
+      title: 'User-Centric',
+      description: 'Always putting users first to ensure delightful, accessible experiences.'
+    },
+    {
+      icon: '📚',
+      title: 'Continuous Learning',
+      description: 'Staying curious and embracing new technologies and challenges.'
+    }
+  ];
+}
