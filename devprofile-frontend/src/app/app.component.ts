@@ -10,28 +10,62 @@ import { RouterModule } from '@angular/router';
     <div class="min-h-screen bg-white dark:bg-gray-900 flex flex-col transition-colors duration-300">
       <!-- Navigation -->
       <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-lg border-b-2 border-blue-600 dark:border-blue-500 transition-colors duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="/" class="flex items-center gap-2 hover:scale-110 transition-transform duration-300">
-            <span class="text-3xl font-black bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">Vahid</span>
-            <span class="text-3xl">👨‍💻</span>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+          <!-- Logo -->
+          <a href="/" class="flex items-center gap-1 sm:gap-2 hover:scale-110 transition-transform duration-300">
+            <span class="text-xl sm:text-3xl font-black bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">Vahid</span>
+            <span class="text-lg sm:text-3xl">👨‍💻</span>
           </a>
-          <ul class="flex gap-8 items-center">
-            <li><a href="/" class="text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Home</a></li>
-            <li><a href="/resume" class="text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Resume</a></li>
-            <li><a href="/projects" class="text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Projects</a></li>
-            <li><a href="/contact" class="text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Contact</a></li>
+          
+          <!-- Mobile Menu Button -->
+          <button (click)="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-2xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+            {{ mobileMenuOpen ? '✕' : '☰' }}
+          </button>
+          
+          <!-- Desktop Navigation -->
+          <ul class="hidden md:flex gap-6 lg:gap-8 items-center">
+            <li><a href="/" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Home</a></li>
+            <li><a href="/resume" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Resume</a></li>
+            <li><a href="/projects" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Projects</a></li>
+            <li><a href="/contact" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Contact</a></li>
             <li>
-              <button (click)="toggleTheme()" class="text-2xl hover:scale-125 transition-transform duration-300" [title]="isDark ? 'Light Mode' : 'Dark Mode'">
+              <button (click)="toggleTheme()" class="text-lg sm:text-xl lg:text-2xl hover:scale-125 transition-transform duration-300" [title]="isDark ? 'Light Mode' : 'Dark Mode'">
                 {{ isDark ? '☀️' : '🌙' }}
               </button>
             </li>
             <li>
               <a href="https://github.com/vahid454" target="_blank" rel="noopener" 
-                 class="bg-gradient-to-r from-gray-800 to-gray-900 dark:from-blue-600 dark:to-indigo-600 text-white px-5 py-2 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 font-bold flex items-center gap-2">
-                <span>🐙</span> GitHub
+                 class="bg-gradient-to-r from-gray-800 to-gray-900 dark:from-blue-600 dark:to-indigo-600 text-white px-3 sm:px-5 py-2 rounded-lg text-xs sm:text-sm lg:text-base hover:shadow-lg transition-all duration-300 transform hover:scale-105 font-bold flex items-center gap-1 sm:gap-2">
+                <span>🐙</span> <span class="hidden sm:inline">GitHub</span>
               </a>
             </li>
           </ul>
+          
+          <!-- Mobile Theme Toggle -->
+          <button (click)="toggleTheme()" class="md:hidden text-lg hover:scale-125 transition-transform duration-300" [title]="isDark ? 'Light Mode' : 'Dark Mode'">
+            {{ isDark ? '☀️' : '🌙' }}
+          </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div *ngIf="mobileMenuOpen" class="md:hidden bg-white dark:bg-gray-800 border-t border-blue-600 dark:border-blue-500">
+          <div class="px-4 py-4 space-y-2">
+            <a href="/" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+              🏠 Home
+            </a>
+            <a href="/resume" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+              📄 Resume
+            </a>
+            <a href="/projects" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+              🚀 Projects
+            </a>
+            <a href="/contact" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+              💬 Contact
+            </a>
+            <a href="https://github.com/vahid454" target="_blank" rel="noopener" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition">
+              🐙 GitHub Profile
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -148,6 +182,7 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   isDark = false;
+  mobileMenuOpen = false;
 
   constructor() {
     this.initTheme();

@@ -8,48 +8,48 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
-      <div class="max-w-5xl mx-auto px-4 py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
 
         <!-- Hero Section -->
-        <div class="text-center mb-16 animate-fade-in">
+        <div class="text-center mb-12 sm:mb-16 animate-fade-in">
 
           <!-- Profile Image -->
-          <div class="mb-12 flex justify-center">
+          <div class="mb-8 sm:mb-12 flex justify-center">
             <div class="relative">
-              <div class="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 dark:from-blue-400 dark:to-indigo-500 p-1 shadow-2xl hover:shadow-3xl transition-all duration-300">
+              <div class="w-32 sm:w-48 h-32 sm:h-48 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 dark:from-blue-400 dark:to-indigo-500 p-1 shadow-2xl hover:shadow-3xl transition-all duration-300">
                 <img src="assets/IMG_Vahid.jpg" alt="Vahid Kha Mansuri" class="w-full h-full rounded-full object-cover">
               </div>
-              <div class="absolute bottom-0 right-0 bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg border-4 border-blue-500 dark:border-blue-400">
-                <span class="text-2xl">👨‍💻</span>
+              <div class="absolute bottom-0 right-0 bg-white dark:bg-gray-800 rounded-full p-2 sm:p-3 shadow-lg border-4 border-blue-500 dark:border-blue-400">
+                <span class="text-xl sm:text-2xl">👨‍💻</span>
               </div>
             </div>
           </div>
 
           <!-- Name and Title -->
-          <h1 class="text-6xl md:text-7xl font-black bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent mb-4">
+          <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent mb-2 sm:mb-4">
             Vahid Kha Mansuri
           </h1>
-          <p class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-4">
+          <p class="text-lg sm:text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-4">
             Full Stack Engineer | Backend Specialist | AI Enthusiast
           </p>
 
           <!-- Contact Info -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 text-gray-700 dark:text-gray-300">
-            <a href="mailto:vahidmansuri702@gmail.com" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              <span>✉️</span> vahidmansuri702&#64;gmail.com
+          <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center mb-6 sm:mb-8 text-xs sm:text-base text-gray-700 dark:text-gray-300">
+            <a href="mailto:vahidmansuri702@gmail.com" class="flex items-center gap-1 sm:gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+              <span>✉️</span> <span class="hidden sm:inline">vahidmansuri702&#64;gmail.com</span><span class="sm:hidden">Email</span>
             </a>
             <span class="hidden sm:inline text-gray-300 dark:text-gray-600">•</span>
-            <a href="tel:+918109300454" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              <span>📱</span> +91 8109300454
+            <a href="tel:+918109300454" class="flex items-center gap-1 sm:gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+              <span>📱</span> <span class="hidden sm:inline">+91 8109300454</span><span class="sm:hidden">Phone</span>
             </a>
             <span class="hidden sm:inline text-gray-300 dark:text-gray-600">•</span>
-            <a href="https://www.linkedin.com/in/vahid454/" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              <span>💼</span> LinkedIn
+            <a href="https://www.linkedin.com/in/vahid454/" target="_blank" rel="noopener" class="flex items-center gap-1 sm:gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition">
+              <span>💼</span> <span class="hidden sm:inline">LinkedIn</span><span class="sm:hidden">Profile</span>
             </a>
           </div>
 
           <!-- Bio -->
-          <p class="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <p class="text-sm sm:text-base md:text-lg text-gray-700 dark:text-gray-300 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto">
             5+ years crafting scalable, innovative solutions with C#, Angular, and Cloud technologies.
             Specialized in enterprise architecture, AI integration, and high-performance distributed systems.
             Passionate about solving complex problems and mentoring teams.
@@ -57,15 +57,15 @@ import { CommonModule } from '@angular/common';
         </div>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <a href="/assets/Vahid Kha Mansuri.pdf" download class="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-500 dark:to-indigo-600 text-white px-8 py-3 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
-            <span>📥</span> Download Resume
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16">
+          <a href="/assets/Vahid Kha Mansuri.pdf" download class="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-500 dark:to-indigo-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-bold text-sm sm:text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+            <span>📥</span> <span class="hidden sm:inline">Download</span> Resume
           </a>
-          <a href="/projects" class="bg-white dark:bg-gray-800 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-xl font-bold text-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
-            <span>🚀</span> View Projects
+          <a href="/projects" class="bg-white dark:bg-gray-800 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-bold text-sm sm:text-lg hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+            <span>🚀</span> <span class="hidden sm:inline">View</span> Projects
           </a>
-          <a href="https://github.com/vahid454" target="_blank" rel="noopener" class="bg-gray-900 dark:bg-gray-700 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
-            <span>🔗</span> GitHub Profile
+          <a href="https://github.com/vahid454" target="_blank" rel="noopener" class="bg-gray-900 dark:bg-gray-700 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-xl font-bold text-sm sm:text-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+            <span>🔗</span> <span class="hidden sm:inline">GitHub</span> <span class="sm:hidden">Profile</span>
           </a>
         </div>
 
