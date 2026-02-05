@@ -3,6 +3,10 @@
   "outputDirectory": "devprofile-frontend/dist/devprofile-frontend",
   "rewrites": [
     {
+      "source": "/api/:path*",
+      "destination": "https://dev-profile-beige.vercel.app/api/:path*"
+    },
+    {
       "source": "/assets/:path*",
       "destination": "/assets/:path*"
     },
