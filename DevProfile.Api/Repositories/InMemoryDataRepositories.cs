@@ -17,8 +17,13 @@ public class InMemoryExperienceRepository : IExperienceRepository
             "Hansen Tech",
             new DateTime(2023, 6, 1),
             null,
-            "Full Stack development with C#, Angular, and AWS",
-            new List<string> { "Developed scalable REST APIs with .NET Core", "Built responsive Angular UIs with Tailwind CSS", "Managed AWS cloud infrastructure and deployment", "Implemented microservices architecture", "Led code reviews and mentored junior developers" }
+            "Catalog Hansen Suite Product Development",
+            new List<string> { "Full Stack development with C#, Angular, and AWS", 
+            "Developed scalable REST APIs with .NET Core",
+             "Managed AWS cloud infrastructure and deployment", 
+             "Implemented microservices architecture", 
+             "Improved code performance and usability", 
+             "Led code reviews and mentored junior developers" }
         );
 
         var exp2 = new Experience(
@@ -27,8 +32,12 @@ public class InMemoryExperienceRepository : IExperienceRepository
             "NCS Group",
             new DateTime(2022, 1, 1),
             new DateTime(2023, 5, 31),
-            "Enterprise application development and cloud migration",
-            new List<string> { "Led backend team for microservices development", "Implemented CI/CD pipelines with GitHub Actions", "Optimized database performance and query execution", "Managed Azure cloud resources and deployments" }
+            "Inland Revenue Authority of Singapore (IRAS) - Tax Portal Development",
+            new List<string> { "Worked as a Full Stack Developer on the Financial Account Management module", 
+                "Optimized database performance and query execution",
+                "Improved code quality and maintainability",
+                 "Implemented CI/CD pipelines with GitHub Actions", 
+                 "Managed Azure cloud resources and deployments" }
         );
 
         var exp3 = new Experience(
@@ -37,18 +46,22 @@ public class InMemoryExperienceRepository : IExperienceRepository
             "Capgemini",
             new DateTime(2021, 3, 1),
             new DateTime(2021, 12, 31),
-            "Windows and web application development",
-            new List<string> { "Developed enterprise WPF applications with C#", "Created RESTful APIs and SQL Server databases", "Participated in agile sprints and code reviews" }
+            "5G-SA-L3 Core Network Function Development",
+            new List<string> { "Worked on enterprise C# applications along with CShell", "Created RESTful APIs and used SQL Server databases", "Participated in agile sprints and unit testing development" }
         );
 
         var exp4 = new Experience(
             Guid.NewGuid(),
             "Intern",
-            "Smart Home Automation Project",
+            "Thinking Machines",
             new DateTime(2020, 6, 1),
             new DateTime(2020, 12, 31),
-            "IoT and Home Automation System Development",
-            new List<string> { "Developed home automation system with Python and MQTT protocol", "Integrated Raspberry Pi with various IoT sensors", "Built real-time monitoring dashboard for smart devices", "Implemented automated controls for lighting and appliances", "Learned hardware-software integration and system design" }
+            "Smart Home Automation using IoT",
+            new List<string> { "Developed home automation system with Python and MQTT protocol",
+             "Integrated Raspberry Pi with various IoT sensors",
+              "Built real-time monitoring dashboard for smart devices",
+               "Implemented automated controls for lighting and appliances",
+                "Learned hardware-software integration and system design" }
         );
 
         _store[exp1.Id] = exp1;
