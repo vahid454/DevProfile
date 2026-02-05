@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProfileService {
   private apiUrl = (typeof window !== 'undefined' && window.location.hostname.endsWith('vercel.app'))
-    ? 'https://dev-profile-beige.vercel.app/api/profile'
+    ? 'https://devprofile-yd3s.onrender.com/profile'
     : '/api/profile';
 
   constructor(private http: HttpClient) {}
