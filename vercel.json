@@ -3,6 +3,9 @@
   "outputDirectory": "devprofile-frontend/dist/devprofile-frontend",
   "cleanUrls": true,
   "trailingSlash": false,
+  "env": {
+    "NODE_ENV": "production"
+  },
   "functions": {
     "api/**": {
       "memory": 1024,
