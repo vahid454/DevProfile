@@ -24,10 +24,10 @@ import { RouterModule } from '@angular/router';
           
           <!-- Desktop Navigation -->
           <ul class="hidden md:flex gap-6 lg:gap-8 items-center">
-            <li><a href="/" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Home</a></li>
-            <li><a href="/resume" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Resume</a></li>
-            <li><a href="/projects" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Projects</a></li>
-            <li><a href="/contact" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Contact</a></li>
+            <li><a routerLink="/" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Home</a></li>
+            <li><a routerLink="/resume" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Resume</a></li>
+            <li><a routerLink="/projects" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Projects</a></li>
+            <li><a routerLink="/contact" class="text-sm lg:text-base text-gray-700 dark:text-gray-300 font-semibold hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition">Contact</a></li>
             <li>
               <button (click)="toggleTheme()" class="text-lg sm:text-xl lg:text-2xl hover:scale-125 transition-transform duration-300" [title]="isDark ? 'Light Mode' : 'Dark Mode'">
                 {{ isDark ? '☀️' : '🌙' }}
@@ -50,16 +50,16 @@ import { RouterModule } from '@angular/router';
         <!-- Mobile Navigation Menu -->
         <div *ngIf="mobileMenuOpen" class="md:hidden bg-white dark:bg-gray-800 border-t border-blue-600 dark:border-blue-500">
           <div class="px-4 py-4 space-y-2">
-            <a href="/" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+            <a routerLink="/" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
               🏠 Home
             </a>
-            <a href="/resume" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+            <a routerLink="/resume" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
               📄 Resume
             </a>
-            <a href="/projects" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+            <a routerLink="/projects" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
               🚀 Projects
             </a>
-            <a href="/contact" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
+            <a routerLink="/contact" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition" (click)="mobileMenuOpen = false">
               💬 Contact
             </a>
             <a href="https://github.com/vahid454" target="_blank" rel="noopener" class="block px-4 py-2 text-gray-700 dark:text-gray-300 font-semibold hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg transition">
@@ -91,9 +91,9 @@ import { RouterModule } from '@angular/router';
               <h4 class="font-bold text-blue-300 dark:text-blue-200 mb-4">Navigation</h4>
               <ul class="space-y-2 text-gray-300 dark:text-gray-400">
                 <li><a href="/" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Home</a></li>
-                <li><a href="/resume" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Resume</a></li>
-                <li><a href="/projects" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Projects</a></li>
-                <li><a href="/contact" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Contact</a></li>
+                <li><a routerLink="/resume" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Resume</a></li>
+                <li><a routerLink="/projects" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Projects</a></li>
+                <li><a routerLink="/contact" class="hover:text-blue-300 dark:hover:text-blue-200 transition">Contact</a></li>
               </ul>
             </div>
             <div>

@@ -53,6 +53,18 @@ public class Startup
         // Use CORS policy
         app.UseCors("AllowFrontend");
 
+        // Disable caching for API responses to avoid 304 responses during SPA fetches
+        app.Use(async (context, next) =>
+        {
+            if (context.Request.Path.StartsWithSegments("/api"))
+            {
+                context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0";
+                context.Response.Headers["Pragma"] = "no-cache";
+                context.Response.Headers["Expires"] = "-1";
+            }
+            await next();
+        });
+
         // Enable Swagger middleware and UI at /swagger
         app.UseSwagger();
         app.UseSwaggerUI(c =>
