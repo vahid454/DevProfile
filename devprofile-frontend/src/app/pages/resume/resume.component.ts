@@ -19,6 +19,16 @@ import { PortfolioService } from '../../services/portfolio.service';
           </a>
         </div>
 
+        <!-- Loader -->
+        <ng-template #sectionLoader>
+          <div class="flex justify-center items-center py-10">
+            <div class="relative">
+              <div class="w-12 h-12 rounded-full border-4 border-blue-200 dark:border-gray-600"></div>
+              <div class="w-12 h-12 rounded-full border-4 border-blue-600 border-t-transparent animate-spin absolute top-0 left-0"></div>
+            </div>
+          </div>
+        </ng-template>
+
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           <!-- Main Content -->
           <div class="lg:col-span-2">
@@ -30,40 +40,42 @@ import { PortfolioService } from '../../services/portfolio.service';
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">Experience</h2>
               </div>
               
-              <div class="space-y-4 sm:space-y-6">
-                <div *ngFor="let exp of experience; let last = last" 
-                     class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-l-4 border-gradient-to-b from-blue-600 to-indigo-600">
-                  
-                  <!-- Timeline dot -->
-                  <div class="flex gap-3 sm:gap-6 p-4 sm:p-6 lg:p-8">
-                    <div class="flex flex-col items-center flex-shrink-0">
-                      <div class="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 mt-1 sm:mt-2"></div>
-                      <div class="w-1 h-12 sm:h-16 bg-gray-300 dark:bg-gray-600 my-1 sm:my-2"></div>
-                    </div>
+              <ng-container *ngIf="!isLoadingExperience; else sectionLoader">
+                <div class="space-y-4 sm:space-y-6">
+                  <div *ngFor="let exp of experience; let last = last" 
+                       class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-l-4 border-gradient-to-b from-blue-600 to-indigo-600">
                     
-                    <div class="flex-1 min-w-0">
-                      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4 mb-2">
-                        <div>
-                          <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">{{ exp.title }}</h3>
-                          <p class="text-base sm:text-lg text-blue-600 dark:text-blue-400 font-semibold">{{ exp.company }}</p>
-                        </div>
-                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 sm:px-4 py-1 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap">
-                          {{ exp.startDate | date: 'MMM yyyy' }} - {{ exp.endDate ? (exp.endDate | date: 'MMM yyyy') : 'Present' }}
-                        </span>
+                    <!-- Timeline dot -->
+                    <div class="flex gap-3 sm:gap-6 p-4 sm:p-6 lg:p-8">
+                      <div class="flex flex-col items-center flex-shrink-0">
+                        <div class="w-3 sm:w-4 h-3 sm:h-4 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 mt-1 sm:mt-2"></div>
+                        <div class="w-1 h-12 sm:h-16 bg-gray-300 dark:bg-gray-600 my-1 sm:my-2"></div>
                       </div>
                       
-                      <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 leading-relaxed">{{ exp.description }}</p>
-                      
-                      <div class="space-y-1 sm:space-y-2">
-                        <div *ngFor="let resp of exp.responsibilities" class="flex items-start gap-2 sm:gap-3 text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                          <span class="text-blue-600 dark:text-blue-400 font-bold mt-0.5">✓</span>
-                          <span>{{ resp }}</span>
+                      <div class="flex-1 min-w-0">
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4 mb-2">
+                          <div>
+                            <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">{{ exp.title }}</h3>
+                            <p class="text-base sm:text-lg text-blue-600 dark:text-blue-400 font-semibold">{{ exp.company }}</p>
+                          </div>
+                          <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-3 sm:px-4 py-1 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap">
+                            {{ exp.startDate | date: 'MMM yyyy' }} - {{ exp.endDate ? (exp.endDate | date: 'MMM yyyy') : 'Present' }}
+                          </span>
+                        </div>
+                        
+                        <p class="text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-3 sm:mb-4 leading-relaxed">{{ exp.description }}</p>
+                        
+                        <div class="space-y-1 sm:space-y-2">
+                          <div *ngFor="let resp of exp.responsibilities" class="flex items-start gap-2 sm:gap-3 text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                            <span class="text-blue-600 dark:text-blue-400 font-bold mt-0.5">✓</span>
+                            <span>{{ resp }}</span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </ng-container>
             </section>
 
             <!-- Education Section -->
@@ -73,21 +85,23 @@ import { PortfolioService } from '../../services/portfolio.service';
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">Education</h2>
               </div>
               
-              <div *ngFor="let edu of education" class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-l-4 border-purple-600">
-                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">{{ edu.degree }}</h3>
-                <p class="text-base sm:text-lg text-purple-600 dark:text-purple-400 font-semibold mb-2 sm:mb-3">{{ edu.school }}</p>
-                <div class="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-base text-gray-700 dark:text-gray-300">
-                  <span class="flex items-center gap-2">
-                    <span>📚</span> {{ edu.field }}
-                  </span>
-                  <span class="flex items-center gap-2">
-                    <span>📅</span> {{ edu.year }}
-                  </span>
-                  <span *ngIf="edu.gpa" class="flex items-center gap-2">
-                    <span>⭐</span> CGPA: {{ edu.gpa }}
-                  </span>
+              <ng-container *ngIf="!isLoadingEducation; else sectionLoader">
+                <div *ngFor="let edu of education" class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-l-4 border-purple-600">
+                  <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">{{ edu.degree }}</h3>
+                  <p class="text-base sm:text-lg text-purple-600 dark:text-purple-400 font-semibold mb-2 sm:mb-3">{{ edu.school }}</p>
+                  <div class="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-base text-gray-700 dark:text-gray-300">
+                    <span class="flex items-center gap-2">
+                      <span>📚</span> {{ edu.field }}
+                    </span>
+                    <span class="flex items-center gap-2">
+                      <span>📅</span> {{ edu.year }}
+                    </span>
+                    <span *ngIf="edu.gpa" class="flex items-center gap-2">
+                      <span>⭐</span> CGPA: {{ edu.gpa }}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </ng-container>
             </section>
 
           </div>
@@ -147,21 +161,23 @@ import { PortfolioService } from '../../services/portfolio.service';
                   <h2 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">Skills</h2>
                 </div>
                 
-                <div class="space-y-3 sm:space-y-4">
-                  <div *ngFor="let skill of skills" 
-                       class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-3 sm:p-4 border-t-2 border-gradient-to-r from-green-600 to-teal-600">
-                    <h4 class="font-bold text-gray-900 dark:text-white mb-2 sm:mb-3 flex items-center gap-2 text-sm sm:text-base">
-                      <span class="w-2 h-2 rounded-full bg-gradient-to-r from-green-600 to-teal-600"></span>
-                      {{ skill.category }}
-                    </h4>
-                    <div class="flex flex-wrap gap-2">
-                      <span *ngFor="let tech of skill.technologies" 
-                            class="bg-gradient-to-r from-green-100 dark:from-green-900 to-teal-100 dark:to-teal-900 text-green-800 dark:text-green-200 px-2 py-1 rounded text-xs font-semibold hover:from-green-200 dark:hover:from-green-800 hover:to-teal-200 dark:hover:to-teal-800 transition">
-                        {{ tech }}
-                      </span>
+                <ng-container *ngIf="!isLoadingSkills; else sectionLoader">
+                  <div class="space-y-3 sm:space-y-4">
+                    <div *ngFor="let skill of skills" 
+                         class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-3 sm:p-4 border-t-2 border-gradient-to-r from-green-600 to-teal-600">
+                      <h4 class="font-bold text-gray-900 dark:text-white mb-2 sm:mb-3 flex items-center gap-2 text-sm sm:text-base">
+                        <span class="w-2 h-2 rounded-full bg-gradient-to-r from-green-600 to-teal-600"></span>
+                        {{ skill.category }}
+                      </h4>
+                      <div class="flex flex-wrap gap-2">
+                        <span *ngFor="let tech of skill.technologies" 
+                              class="bg-gradient-to-r from-green-100 dark:from-green-900 to-teal-100 dark:to-teal-900 text-green-800 dark:text-green-200 px-2 py-1 rounded text-xs font-semibold hover:from-green-200 dark:hover:from-green-800 hover:to-teal-200 dark:hover:to-teal-800 transition">
+                          {{ tech }}
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </ng-container>
               </section>
 
               <!-- Certifications -->
@@ -217,12 +233,26 @@ export class ResumeComponent implements OnInit {
   education: any[] = [];
   skills: any[] = [];
 
+  isLoadingExperience = true;
+  isLoadingEducation = true;
+  isLoadingSkills = true;
+
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit() {
-    this.portfolioService.getExperience().subscribe(data => this.experience = data);
-    this.portfolioService.getEducation().subscribe(data => this.education = data);
-    this.portfolioService.getSkills().subscribe(data => this.skills = data);
+    this.portfolioService.getExperience().subscribe(data => {
+      this.experience = data;
+      this.isLoadingExperience = false;
+    });
+
+    this.portfolioService.getEducation().subscribe(data => {
+      this.education = data;
+      this.isLoadingEducation = false;
+    });
+
+    this.portfolioService.getSkills().subscribe(data => {
+      this.skills = data;
+      this.isLoadingSkills = false;
+    });
   }
 }
-
