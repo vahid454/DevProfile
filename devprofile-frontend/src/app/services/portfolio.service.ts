@@ -8,7 +8,7 @@ import { catchError } from 'rxjs/operators';
 })
 export class PortfolioService {
   private apiUrl = (typeof window !== 'undefined' && window.location.hostname.endsWith('vercel.app'))
-    ? 'https://devprofile-yd3s.onrender.com/'
+    ? 'https://devprofile-yd3s.onrender.com'
     : '/api';
 
   constructor(private http: HttpClient) {}
