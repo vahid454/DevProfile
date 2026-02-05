@@ -1,0 +1,6 @@
+[build]
+  command = "cd devprofile-frontend && npm ci && npm run build"
+  publish = "devprofile-frontend/dist/devprofile-frontend"
+
+[build.environment]
+  NODE_ENV = "production"
